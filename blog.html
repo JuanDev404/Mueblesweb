@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce-Blog</title>
+    <!--Agregamos normalize-->
+    <!--Forma de agregar estilo en css-->
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <!--- toda etiqueta tiene atributos-->
+    <!--toda pagina tiene un header que es el encabezado-->
+    <header>
+      <h1 class="nombre-sitio">Tienda de <span>muebles</span></h1>
+    </header>
+
+    <!--qui agregaremos nuestro navegador 
+    en la cual se agrupa enlaces -->
+
+    <div class="contenedor-navegacion">
+      <nav class="nav-principal contenedor">
+        <a class="enlace" href="index.html">Inicio</a>
+        <a class="enlace" href="nosotros.html">Nosotros </a>
+        <a class="enlace" href="tienda.html">Tienda</a>
+        <a class="enlace" href="base.html">Blog</a>
+        <a class="enlace" href="galeria.html">Galeria</a>
+        <a class="enlace" href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+
+    <!--Solo se debe de tener un main por pagina en donde esta lo prinicipal de la pagina web-->
+    <main class="contenido-principal contenedor">
+      <h2 class="text-center">Blog</h2>
+
+      <section class="contenedor-blog">
+        <!-- aqui comienza el blog -->
+        <div class="blog">
+          <!-- contenido que por si solo es representativo un blog,periodico, revista -->
+          <article class="entrada">
+            <h2>Guia de colores</h2>
+            <div class="imagen">
+              <img src="images/nosotros.jpg" alt="imagen blog" />
+            </div>
+            <div class="entrada-meta">
+              <p>Fecha :<span>22 de octubre de 2025</span></p>
+              <p>Escrito por : <span> Tienda Muebles</span></p>
+            </div>
+
+            <div class="entrada-blog">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus molestiae architecto officiis veniam repellendus quae, officia harum consectetur eos commodi molestias, recusandae porro quis neque corrupti modi deserunt vero aspernatur.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nihil distinctio. Sapiente, repudiandae obcaecati ut sit tempora animi, a similique iusto ea aut commodi at rem. Quo officia natus quisquam.</p>
+            </div>
+            <a href="entrada.html"  class="btn max-width-30">LEER</a>
+          </article>
+
+           <article class="entrada">
+            <h2>Guia de colores</h2>
+            <div class="imagen">
+              <img src="images/nosotros.jpg" alt="imagen blog" />
+            </div>
+            <div class="entrada-meta">
+              <p>Fecha :<span>22 de octubre de 2025</span></p>
+              <p>Escrito por : <span> Tienda Muebles</span></p>
+            </div>
+
+            <div class="entrada-blog">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus molestiae architecto officiis veniam repellendus quae, officia harum consectetur eos commodi molestias, recusandae porro quis neque corrupti modi deserunt vero aspernatur.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nihil distinctio. Sapiente, repudiandae obcaecati ut sit tempora animi, a similique iusto ea aut commodi at rem. Quo officia natus quisquam.</p>
+            </div>
+            <a href="entrada.html"  class="btn max-width-30">LEER</a>
+          </article>
+        </div>
+
+      
+        <!-- para crear la barra lateral es un sidebar -->
+        <aside>
+            <h3>Otra entradas de blog</h3>
+            <ul>
+                <li>
+                    <a href="entrada.html">Guia de colores</a>
+                </li>
+                  <li>
+                    <a href="entrada.html">Nuevos Modelos</a>
+                </li>
+                  <li>
+                    <a href="entrada.html">Guia para diseños de interiores</a>
+                </li>
+                  <li>
+                    <a href="entrada.html">Guia para diseños de exteriores</a>
+                </li>
+            </ul>
+          
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="grid-footer contenedor">
+        <div>
+          <h3>Categorias</h3>
+          <nav class="enlaces">
+            <a href="#">Cocina</a>
+            <a href="#">Oficina</a>
+            <a href="#">Jardin</a>
+            <a href="#">Cochera</a>
+            <a href="#">Dormitorios</a>
+          </nav>
+        </div>
+
+        <div>
+          <h3>Sobre nosotros</h3>
+          <nav class="enlaces">
+            <a href="#">Nuestra historia</a>
+            <a href="#">Misión, Visión y Valores</a>
+            <a href="#">Carreras</a>
+            <a href="#">Politica de privacidad</a>
+            <a href="#">Terminos del servicio</a>
+          </nav>
+        </div>
+
+        <div>
+          <h3>Soporte</h3>
+          <nav class="enlaces">
+            <a href="#">Preguntas Frecuentes</a>
+            <a href="#">Ayuda en Linea</a>
+            <a href="#">Confianza y Seguridad</a>
+          </nav>
+        </div>
+      </div>
+      <p class="text-center copyrigth">
+        Todos los derechos reservados,Tienda de muebles @
+      </p>
+    </footer>
+  </body>
+</html>
